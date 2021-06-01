@@ -8,6 +8,7 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include "VirtualTrees.hpp"
+#include <Vcl.ExtCtrls.hpp>
 //---------------------------------------------------------------------------
 
 struct ANode
@@ -25,9 +26,14 @@ class TForm2 : public TForm
 __published:	// IDE-managed Components
 	TButton *Button1;
 	TVirtualStringTree *VirtualStringTree1;
-	TStaticText *StaticText1;
+	TPanel *Panel1;
+	TPanel *Panel2;
+	TButton *Button2;
+	TButton *Button3;
 	void __fastcall VirtualStringTree1GetText(TBaseVirtualTree *Sender, PVirtualNode Node,
           TColumnIndex Column, TVSTTextType TextType, UnicodeString &CellText);
+	void __fastcall VirtualStringTree1AddToSelection(TBaseVirtualTree *Sender, PVirtualNode Node);
+
 
 private:	// User declarations
 public:		// User declarations
