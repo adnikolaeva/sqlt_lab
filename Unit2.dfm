@@ -1,7 +1,7 @@
 object Form2: TForm2
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = 'Nikolaeva'
   ClientHeight = 286
   ClientWidth = 888
   Color = clBtnFace
@@ -20,6 +20,7 @@ object Form2: TForm2
     Height = 39
     Caption = #1059#1076#1072#1083#1080#1090#1100' '#1079#1072#1087#1080#1089#1100
     TabOrder = 0
+    OnClick = Button1Click
   end
   object VirtualStringTree1: TVirtualStringTree
     Left = 8
@@ -79,6 +80,7 @@ object Form2: TForm2
     Height = 39
     Caption = #1054#1095#1080#1089#1090#1080#1090#1100' '#1090#1072#1073#1083#1080#1094#1091
     TabOrder = 4
+    OnClick = Button2Click
   end
   object Button3: TButton
     Left = 615
@@ -87,5 +89,6 @@ object Form2: TForm2
     Height = 39
     Caption = #1042#1099#1093#1086#1076
     TabOrder = 5
+    OnClick = Button3Click
   end
 end
